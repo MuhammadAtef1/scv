@@ -1,6 +1,6 @@
 *{
     margin: 0;
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: Amiri;
 }
 :root {
     --dark-blue:#000040d0;
@@ -41,11 +41,19 @@ header {
     row-gap: 30px;
     align-items: flex-start;
 }
+.name h2 {
+    font-family: Marhey;
+}
+.name p {
+    font-family: Marhey;
+    text-align: end;
+}
 .name span {
     font-weight: 600;
 }
 .img-data {
     column-gap: 30px;
+    flex-direction: row-reverse;
 }
 .img-data img {
     width: 150px;
@@ -58,6 +66,13 @@ header {
 }
 .data-details {
     column-gap: 40px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.data-details h4 {
+    font-family: Arial, Helvetica, sans-serif;
+}
+.data-details p {
+    font-family: Arial, Helvetica, sans-serif;
 }
 .data-details:nth-child(1) p {
     margin-left: -12px;
@@ -66,13 +81,15 @@ header {
     background-color: var(--dark-blue);
     color: white;
     font-weight: bold;
-    padding: 20px 20px 20px 40px;
+    padding: 20px 40px 20px 20px;
+    direction: rtl;
 }
 .skills {
     padding: var(--main-padding);
 }
 .main-title {
     column-gap: 10px;
+    direction: rtl;
 }
 .main-title i {
     width: 30px;
@@ -103,10 +120,16 @@ header {
 .work-history {
     padding: var(--main-padding);
 }
+.work-history h1 {
+    color: var(--dark-blue);
+}
 .work-history-data {
     margin: 30px 0;
     display: grid;
     grid-template-columns: 70px 1fr;
+}
+.work-history-data{
+    direction: rtl;
 }
 .work-time p {
     font-size: 12px;
@@ -121,6 +144,12 @@ header {
 .work-history-all-data p {
     font-size: 12px;
 }
+.work-history-all-data span {
+    font-weight: bold;
+}
 .education {
     padding: var(--main-padding);
+}
+.work-history:nth-last-child(1) {
+    margin-top: 130px;
 }
